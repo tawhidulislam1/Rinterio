@@ -20,9 +20,6 @@
         .manrope-fonts {
             font-family: "Manrope", sans-serif;
         }
-        .contact-img{
-          background: url(assets/bg.jpg);
-        }
     </style>
     <script>
         tailwind.config = {
@@ -143,7 +140,7 @@
             </div>
             <div class="grid grid-cols-1 px-4 gap-12 md:grid-cols-2 lg:grid-cols-4">
               <!-- card 1 -->
-              <div class="card h-auto shadow-xl py-4 px-6 bg-[#E7C1D3]">
+              <div class="card h-auto shadow-xl py-4  bg-[#E7C1D3]">
                 <figure>
                   <img src="assets/concept.png" alt="Shoes">
                 </figure>
@@ -154,7 +151,7 @@
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="card h-auto shadow-xl py-4 px-6 bg-[#EFDA6E]">
+              <div class="card h-auto shadow-xl py-4  bg-[#EFDA6E]">
                 <figure>
                   <img src="assets/flow-chart.png" alt="Shoes">
                 </figure>
@@ -164,7 +161,7 @@
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="card h-auto shadow-xl py-4 px-6 bg-[#A4DAC3]">
+              <div class="card h-auto shadow-xl py-4  bg-[#A4DAC3]">
                 <figure>
                   <img src="assets/vision.png" alt="Shoes">
                 </figure>
@@ -175,7 +172,7 @@
                 </div>
               </div>
               <!-- card 4 -->
-              <div class="card h-auto shadow-xl py-4 px-6 bg-[#77AAEA]">
+              <div class="card h-auto shadow-xl py-4  bg-[#77AAEA]">
                 <figure>
                   <img src="assets/budget-planning.png" alt="Shoes">
                 </figure>
@@ -190,18 +187,45 @@
           </div>
         </section>
         <!-- contact section start  -->
-         <section class="contact-img w-full py-20 bg-[url('assets/bg.jpg')]">
+         <section class=" w-full py-20 bg-[url('assets/bg.jpg')] bg-cover bg-no-repeat">
           <div class="text-center">
             <span class="text-1xl rounded-2xl font-bold bg-white mt-4 mb-12 px-5 py-2 "><i class="fa-solid fa-arrow-right"></i> Let’s Connect</span>
             <h2 class="text-3xl text-blod lg:text-4xl mt-4 font-extrabold">Let’s Discuss Next Project</h2>
-            <p class="text-gray-500 w-2/4 mx-auto text-sm	mt-4">We can't wait to hear about your dream home project. Whether you're looking for a full-service remodel or a simple home refresh, we're here to help!</p>
+            <p class="text-gray-500  mx-auto text-sm	mt-4 lg:w-2/4">We can't wait to hear about your dream home project. Whether you're looking for a full-service remodel or a simple home refresh, we're here to help!</p>
           </div>
-          <div class="form">
-
-          </div>
+          <form action="">
+            <div class="form grid grid-cols-1 gap-5 lg:grid-cols-2 px-4 lg:px-40 justify-items-center py-10">
+              <input type="text" placeholder="First Name*" class="input bg-white rounded-3xl w-full max-w-xs p-6" />
+              <input type="text" placeholder="Last Name*" class="input bg-white rounded-3xl w-full max-w-xs p-6" />
+              <input type="text" placeholder="Phone Number*" class="input bg-white rounded-3xl w-full max-w-xs p-6" />
+              <input type="text" placeholder="Email Address*" class="input bg-white rounded-3xl w-full max-w-xs p-6" />
+            </div>
+            <div class="form grid grid-cols-1 gap-5 lg:grid-cols-1 px-10 lg:px-40 justify-items-center ">
+              <textarea class="textarea bg-white rounded-3xl w-full p-6 w-full outline-none" placeholder="Write your message here" rows="8"></textarea>
+              <button
+              class="bg-[#ABEF5F] w-full px-5 py-3 rounded-lg text-black font-bold"
+            >Send mail 
+              <i class="fa-solid fa-arrow-right text-xl -rotate-45 bg-[#000] px-2 py-1 rounded-full text-white"></i>
+            </button>
+            </div>
+          </form>
          </section>
         <!-- contact section end  -->
     </main>
-
+    <footer class="footer footer-center bg-black text-white text-base-content rounded p-10">
+      <div class="text-center">
+        <h2 class="text-3xl text-blod lg:text-4xl mt-4 font-extrabold">Rinterio</h2>
+        <p class="text-gray-300  mx-auto text-sm	mt-4 lg:w-3/4">We can't wait to hear about your dream home project. Whether you're looking for a full-service remodel or a simple home refresh, we're here to help!</p>
+      </div>
+      <nav class="grid grid-flow-col gap-20">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Service</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <aside>
+        <a class="btn bg-direct-primary text-black font-bold">Button <i class="fa-solid fa-arrow-right text-xl -rotate-45 bg-black px-2 py-1 rounded-full text-white"></i></a>
+      </aside>
+    </footer>
 </body>
 </html>
